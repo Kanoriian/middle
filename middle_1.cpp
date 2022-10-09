@@ -16,7 +16,7 @@ int itc_len_num(long long number) {
         if (number < 0) {
             number = number * -1;
         }
-    while (number = !0) {
+    while (number =! 0) {
         number / 10;
         x = x + 1;
     }
@@ -34,7 +34,7 @@ int itc_sum_num(long long number) {
         if (number < 0) {
             number = number * -1;
         }
-    while (number = !0) {
+    while (number =! 0) {
         a = number % 10;
         x = x + a;
         number = number / 10;
@@ -53,7 +53,7 @@ long long itc_multi_num(long long number) {
         if (number < 0) {
             number = number * -1;
         }
-    while (number = !0) {
+    while (number =! 0) {
         a = number % 10;
         x = x * a;
         number = number / 10;
