@@ -17,11 +17,11 @@ int itc_second_max_num(long long number) {
     while (number > 0) {
         number = number / 10;
         max2 = number % 10;
-        if (max2 = !max && max2 > zebra) {
+        if (max2 != max && max2 > zebra) {
             max2 = max2;
         }
         else
-            if (max2 < zebra && max2 = !max) {
+            if (max2 < zebra && max2 != max) {
                 max2 = zebra;
             }
             else
