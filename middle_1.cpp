@@ -9,6 +9,9 @@ void itc_num_print(int number) {
 int itc_len_num(long long number) {
     int x;
     x = 0;
+    if(number == -2147483648){
+               return 10;
+            }else
     if (number / 10 == 0) {
         return 1;
     }
@@ -17,7 +20,7 @@ int itc_len_num(long long number) {
             number = number * -1;
         }
     while (number != 0) {
-        number / 10;
+        number = number / 10;
         x = x + 1;
     }
     return x;
