@@ -75,7 +75,7 @@ int itc_max_num(long long number) {
     while (number = !0) {
         number = number / 10;
         x = number % 10;
-        if (x = > a) {
+        if (x >= a) {
             a = x;
         }
         else
