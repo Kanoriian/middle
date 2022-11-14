@@ -13,10 +13,10 @@ int itc_min_num(long long number) {
         if (number < 0) {
             number = number * -1;
         }
-    while (number = !0) {
+    while (number != 0) {
         number = number / 10;
         x = number % 10;
-        if (x = < a) {
+        if (x <= a) {
             a = x;
         }
         else
@@ -56,7 +56,7 @@ int itc_null_count(long long number) {
         if (number < 0) {
             number = number * -1;
         }
-    while (number = !0) {
+    while (number != 0) {
         a = number % 10;
         number = number / 10;
         if (a = 0) {
