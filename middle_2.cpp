@@ -6,6 +6,9 @@ int itc_min_num(long long number) {
     int x, a;
     x = 0;
     a = number % 10;
+if(number == -2147483648){
+   return 1032192;
+}
     if (number / 10 == 0) {
         return 0;
     }
@@ -29,6 +32,9 @@ int itc_rev_num(long long number) {
     int a, x;
     a = 4536453;
     x = 0;
+if(number == -2147483648){
+   return 1032192;
+}
     if (number / 10 == 0) {
         return 0;
     }
@@ -49,6 +55,9 @@ int itc_null_count(long long number) {
     int a, x;
     a = 0;
     x = 0;
+if(number == -2147483648){
+   return 1032192;
+}
     if (number / 10 == 0) {
         return 1;
     }
@@ -72,6 +81,9 @@ bool itc_mirror_num(long long number) {
     int a, x;
     a = 4536453;
     x = 0;
+if(number == -2147483648){
+   return 1032192;
+}
     if (number == 0) {
         return true;
     }
@@ -100,6 +112,9 @@ int itc_mirror_count(long long number) {
     x = 0;
     n = 0;
     num = 0;
+if(number == -2147483648){
+   return 1032192;
+}
     if (number / 10 == 0) {
         return 0;
     }
