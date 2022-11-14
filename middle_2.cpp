@@ -79,31 +79,10 @@ if (number < 0)
 }
 
 bool itc_mirror_num(long long number) {
-    int a, x;
-    a = 4536453;
-    x = 0;
-if(number == -2147483648){
-   return false;
-}
-    if (number == 0) {
-        return true;
-    }
-    else
-        if (number < 0) {
-            number = number * -1;
-        }
-        else
-            while (number > 0) {
-                a = number % 10;
-                x = x + a;
-                x = x * 10;
-                number = number / 10;
-            }
-    x = x / 10;
+    int x = itc_rev_num(number);
     if (x / number == 1) {
         return true;
-    }
-    else
+    }else
         return false;
 }
 
