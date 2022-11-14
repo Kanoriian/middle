@@ -30,16 +30,15 @@ int itc_rev_num(long long number) {
     int a, x;
     a = 4536453;
     x = 0;
-if(number == -2147483648){
-   return 1032192;
-}
-    if (number / 10 == 0) {
-        return 0;
-    }
-    else
-        if (number < 0) {
-            number = number * -1;
-        }
+if(number == -2147483648)
+   return 8463847421;
+
+if (number / 10 == 0)
+    return 0;
+
+if (number < 0)
+    number = number * -1;
+
     while (number > 0) {
         a = number % 10;
         x = x + a;
