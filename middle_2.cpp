@@ -60,23 +60,20 @@ int itc_null_count(long long number) {
     a = 0;
     x = 0;
 if(number == -2147483648){
-   return 1032192;
+   return 0;
 }
-    if (number / 10 == 0) {
-        return 1;
-    }
-    else
-        if (number < 0) {
-            number = number * -1;
-        }
-    while (number != 0) {
+if(number == 0)
+    return 1;
+if (number / 10 == 0)
+        return 0;
+if (number < 0)
+        number = number * -1;
+
+    while (number > 0) {
         a = number % 10;
-        number = number / 10;
-        if (a = 0) {
+        if (a == 0)
             x = x + 1;
-        }
-        else
-            x = x;
+        number = number / 10;
     }
     return x;
 }
