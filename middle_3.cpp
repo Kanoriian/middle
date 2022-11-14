@@ -48,11 +48,11 @@ int itc_second_simple_max_num(long long number) {
     while (number > 0) {
         number = number / 10;
         max3 = number % 10;
-        if (max3 = !max && max3 > zebra && max3 = !max2) {
+        if (max3 != max && max3 > zebra && max3 != max2) {
             max3 = max3;
         }
         else
-            if (max3 = !max && max3 < zebra && max3 = !max2) {
+            if (max3 != max && max3 < zebra && max3 != max2) {
                 max3 = zebra;
             }
             else
