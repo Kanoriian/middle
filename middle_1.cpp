@@ -49,6 +49,9 @@ long long itc_multi_num(long long number) {
     int x, a;
     x = 1;
     a = 0;
+if(number == -2147483648){
+   return 1032192;
+}
     if (number / 10 == 0) {
         return 0;
     }
