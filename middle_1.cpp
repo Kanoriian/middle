@@ -59,7 +59,7 @@ if(number == -2147483648){
         if (number < 0) {
             number = number * -1;
         }
-    while (number != 0) {
+    while (number > 0) {
         a = number % 10;
         x = x * a;
         number = number / 10;
