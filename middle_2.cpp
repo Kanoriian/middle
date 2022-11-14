@@ -50,8 +50,10 @@ if(number == -2147483648){
         x = x * 10;
         number = number / 10;
     }
+    x = x / 10;
     return x;
 }
+
 
 int itc_null_count(long long number) {
     int a, x;
