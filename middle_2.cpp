@@ -82,7 +82,7 @@ bool itc_mirror_num(long long number) {
     a = 4536453;
     x = 0;
 if(number == -2147483648){
-   return 1032192;
+   return false;
 }
     if (number == 0) {
         return true;
