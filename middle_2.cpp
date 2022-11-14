@@ -4,29 +4,31 @@ using namespace std;
 
 int itc_min_num(long long number) {
     int x, a;
-    x = 0;
+    x = number / 10 % 10;
     a = number % 10;
+    number = number / 10;
 if(number == -2147483648){
-   return 1032192;
+   return 1;
 }
     if (number / 10 == 0) {
-        return 0;
+        return number;
     }
     else
         if (number < 0) {
             number = number * -1;
         }
-    while (number != 0) {
-        number = number / 10;
+    while (number > 0) {
         x = number % 10;
-        if (x <= a) {
+        if (x <= a){
             a = x;
-        }
-        else
+            number = number / 10;
+        }else
             a = a;
+            number = number / 10;
     }
     return a;
 }
+
 
 int itc_rev_num(long long number) {
     int a, x;
