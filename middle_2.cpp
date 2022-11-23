@@ -54,7 +54,7 @@ if (number == 2147483647)
 
     while (egor > 0) {
         zebra ++;
-        egor = egor /10;
+        egor = egor / 10;
     }
     return zebra;
 }
