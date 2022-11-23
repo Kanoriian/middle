@@ -25,28 +25,22 @@ if (number < 0)
 
 
 int itc_rev_num(long long number) {
-    int a, x;
-    a = 4536453;
-    x = 0;
-if(number == -2147483648)
-   return 8463847421;
+    int zebra;
+    zebra = 0;
 
+if(number == -2147483648)
+   return 10;
 if (number / 10 == 0)
     return 0;
-
 if (number < 0)
     number = number * -1;
 
     while (number > 0) {
-        a = number % 10;
-        x = x + a;
-        x = x * 10;
-        number = number / 10;
+        zebra ++;
+        number = number /10;
     }
-    x = x / 10;
-    return x;
+    return zebra;
 }
-
 
 int itc_null_count(long long number) {
     int a, x;
