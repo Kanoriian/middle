@@ -25,8 +25,9 @@ if (number < 0)
 
 
 int itc_rev_num(long long number) {
-    int zebra;
+    int zebra, egor;
     zebra = 0;
+    egor = perevorot(number);
 
 if(number == -2147483648)
    return 10;
@@ -35,9 +36,9 @@ if (number / 10 == 0)
 if (number < 0)
     number = number * -1;
 
-    while (number > 0) {
+    while (egor > 0) {
         zebra ++;
-        number = number /10;
+        egor = egor /10;
     }
     return zebra;
 }
