@@ -46,9 +46,11 @@ int itc_rev_num(long long number) {
 if(number == -2147483648)
    return 10;
 if (number / 10 == 0)
-    return 0;
+    return 1;
 if (number < 0)
     number = number * -1;
+if (number == 2147483647)
+    return 10;
 
     while (egor > 0) {
         zebra ++;
