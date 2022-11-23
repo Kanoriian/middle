@@ -2,6 +2,20 @@
 
 using namespace std;
 
+long perevorot(int number){
+   int zebra, rezak, n;
+    zebra = 0;
+    n = number;
+if (number < 0)
+number = number * -1;
+ while(number > 0){
+        zebra = number % 10;
+        rezak = rezak * 10 + zebra;
+        number = number / 10;
+ }
+ return rezak;
+}
+
 int itc_min_num(long long number) {
     int x, a;
     x = 0;
@@ -64,20 +78,6 @@ if (number < 0)
         number = number / 10;
     }
     return x;
-}
-
-long perevorot(int number){
-   int zebra, rezak, n;
-    zebra = 0;
-    n = number;
-if (number < 0)
-number = number * -1;
- while(number > 0){
-        zebra = number % 10;
-        rezak = rezak * 10 + zebra;
-        number = number / 10;
- }
- return rezak;
 }
 
 bool itc_mirror_num(long long number) {
