@@ -2,7 +2,7 @@
 
 using namespace std;
 
-long perevorot(int number){
+long long perevorot(long long number){
    int zebra, rezak, n;
     zebra = 0;
     n = number;
