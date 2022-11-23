@@ -4,15 +4,13 @@ using namespace std;
 
 int itc_min_num(long long number) {
     int x, a;
-    x = number / 10 % 10;
+    x = 0;
     a = number % 10;
-    number = number / 10;
+
 if(number == -2147483648)
    return 1;
-
 if (number / 10 == 0)
     return number;
-
 if (number < 0)
     number = number * -1;
 
@@ -21,8 +19,8 @@ if (number < 0)
         if (x <= a)
             a = x;
             number = number / 10;
+    }
     return a;
-}
 }
 
 
